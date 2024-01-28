@@ -1,3 +1,19 @@
+# Usage for USVTrack
+
+
+### Training
+```
+CUDA_VISIBLE_DEVICES=1 python train.py
+```
+
+### Evaluation
+```
+CUDA_VISIBLE_DEVICES=1 python train.py
+```
+
+
+
+
 ## YOLOV8：You Only Look Once目标检测模型在pytorch当中的实现
 ---
 

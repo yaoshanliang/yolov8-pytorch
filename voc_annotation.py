@@ -32,7 +32,7 @@ train_percent       = 0.9
 #   指向VOC数据集所在的文件夹
 #   默认指向根目录下的VOC数据集
 #-------------------------------------------------------#
-VOCdevkit_path  = '/home/shanliang/workspace/dataset/tracking'
+VOCdevkit_path  = '/home/shanliang/workspace/dataset/USVTrack'
 
 VOCdevkit_sets  = [('2007', 'train'), ('2007', 'val'), ('2007', 'test')]
 classes, _      = get_classes(classes_path)

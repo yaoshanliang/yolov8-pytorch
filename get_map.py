@@ -68,7 +68,7 @@ if __name__ == "__main__":
     #   指向VOC数据集所在的文件夹
     #   默认指向根目录下的VOC数据集
     #-------------------------------------------------------#
-    VOCdevkit_path  = '/home/shanliang/workspace/dataset/tracking'
+    VOCdevkit_path  = '/home/shanliang/workspace/dataset/USVTrack'
     #-------------------------------------------------------#
     #   结果输出的文件夹，默认为map_out
     #-------------------------------------------------------#

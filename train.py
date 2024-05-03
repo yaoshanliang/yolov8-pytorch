@@ -128,9 +128,9 @@ if __name__ == "__main__":
     #                       当mosaic=True时，本代码会在special_aug_ratio范围内开启mosaic。
     #                       默认为前70%个epoch，100个世代会开启70个世代。
     #------------------------------------------------------------------#
-    mosaic              = False
+    mosaic              = True
     mosaic_prob         = 0.5
-    mixup               = False
+    mixup               = True
     mixup_prob          = 0.5
     special_aug_ratio   = 0.7
     #------------------------------------------------------------------#
@@ -174,7 +174,7 @@ if __name__ == "__main__":
     #------------------------------------------------------------------#
     Init_Epoch          = 0
     Freeze_Epoch        = 50
-    Freeze_batch_size   = 48
+    Freeze_batch_size   = 32
     #------------------------------------------------------------------#
     #   解冻阶段训练参数
     #   此时模型的主干不被冻结了，特征提取网络会发生改变
@@ -184,8 +184,8 @@ if __name__ == "__main__":
     #                           Adam可以使用相对较小的UnFreeze_Epoch
     #   Unfreeze_batch_size     模型在解冻后的batch_size
     #------------------------------------------------------------------#
-    UnFreeze_Epoch      = 500
-    Unfreeze_batch_size = 48
+    UnFreeze_Epoch      = 300
+    Unfreeze_batch_size = 32
     #------------------------------------------------------------------#
     #   Freeze_Train    是否进行冻结训练
     #                   默认先冻结主干训练后解冻训练。
